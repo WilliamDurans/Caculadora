@@ -9,6 +9,7 @@ function calcular() {
     var su = n1 - n2 
     var m = n1 * n2
     var d = n1 / n2
+    var p = n1 ** n2
 
     if (n1>n2) {
         su = n1 - n2
@@ -21,5 +22,6 @@ function calcular() {
     var r = document.getElementById("resultado")
     r.innerHTML = `<strong>A partir de ${n1} e ${n2}, respectivamente:</strong><br> 
     A soma vale <strong>${s}</strong>;<br> A subtração vale <strong>${su}</strong>;<br> 
-    A multipicação vale <strong>${m}</strong>;<br> A divisão vale <strong>${d.toFixed(2)}</strong>.`
+    A multipicação vale <strong>${m}</strong>;<br> A divisão vale <strong>${d.toFixed(2)}</strong>;<br>
+    Por fim, ${n1} elevado a ${n2} vale <strong>${p}</strong>.`
 }
